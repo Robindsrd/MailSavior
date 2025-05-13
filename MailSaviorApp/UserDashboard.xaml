@@ -1,0 +1,52 @@
+<Window x:Class="MailSaviorApp.UserDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tableau de bord"
+        Height="400"
+        Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#f4f4f4">
+        <StackPanel Margin="20">
+            <TextBlock Text="Bienvenue sur MailSavior"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Margin="0,0,0,20"/>
+
+            <TextBlock Text="Contenu de l'email à analyser :"/>
+            <TextBox x:Name="EmailInput"
+                    Height="100"
+                    AcceptsReturn="True"
+                    TextWrapping="Wrap"
+                    Margin="0,5,0,10"/>
+
+            <Button Content="Analyser"
+                    Width="100"
+                    Click="Analyze_Click"
+                    Margin="0,0,0,10"/>
+            <TextBlock x:Name="ScoreResult"
+                    FontSize="14"
+                    Foreground="#2C3E50"
+                    Margin="0,10,0,10"/>
+
+            <StackPanel Orientation="Horizontal"
+                    Visibility="Collapsed"
+                    x:Name="FeedbackPanel">
+                <TextBlock Text="Ce message était-il un phishing ? "
+                        VerticalAlignment="Center"/>
+                <Button Content="Oui"
+                        Margin="5,0"
+                        Click="FeedbackYes_Click"/>
+                <Button Content="Non"
+                        Margin="5,0"
+                        Click="FeedbackNo_Click"/>
+            </StackPanel>
+
+            <Button Content="Voir les feedbacks"
+                    Margin="10,10,10,0"
+                    VerticalAlignment="Top"
+                    Height="30"
+                    Click="OpenFeedbackWindow_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
