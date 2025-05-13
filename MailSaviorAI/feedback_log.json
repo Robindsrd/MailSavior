@@ -1,0 +1,44 @@
+[
+    {
+        "timestamp": "2025-05-02T19:04:23.388757",
+        "text": "cliquer sur ce lien",
+        "score": 0.0,
+        "feedback": "phising"
+    },
+    {
+        "timestamp": "2025-05-02T19:04:35.353724",
+        "text": "cliquer sur ce lien",
+        "score": 0.0,
+        "feedback": "phising"
+    },
+    {
+        "timestamp": "2025-05-02T19:22:32.583596",
+        "text": "cliquer ici pour changer de mot de passe ",
+        "score": 0.61,
+        "feedback": "phishing"
+    },
+    {
+        "timestamp": "2025-05-02T19:22:33.732530",
+        "text": "cliquer ici pour changer de mot de passe ",
+        "score": 0.61,
+        "feedback": "phishing"
+    },
+    {
+        "timestamp": "2025-05-02T19:22:34.587442",
+        "text": "cliquer ici pour changer de mot de passe ",
+        "score": 0.61,
+        "feedback": "phishing"
+    },
+    {
+        "timestamp": "2025-05-04T21:14:54.214496",
+        "text": "bonjour veuillez clicker sur ce lien pour changer votre mot de passe monsieur bastou",
+        "score": 0.87,
+        "feedback": "phishing"
+    },
+    {
+        "timestamp": "2025-05-04T21:14:55.684243",
+        "text": "bonjour veuillez clicker sur ce lien pour changer votre mot de passe monsieur bastou",
+        "score": 0.87,
+        "feedback": "phishing"
+    }
+]

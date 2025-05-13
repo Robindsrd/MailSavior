@@ -1,0 +1,16 @@
+<Window x:Class="MailSaviorApp.FeedbackWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Historique des Feedbacks" Height="400" Width="600">
+    <Grid>
+        <ListView Name="FeedbackListView" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Texte" Width="250" DisplayMemberBinding="{Binding text}" />
+                    <GridViewColumn Header="Score" Width="80" DisplayMemberBinding="{Binding score}" />
+                    <GridViewColumn Header="Feedback" Width="100" DisplayMemberBinding="{Binding feedback}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
