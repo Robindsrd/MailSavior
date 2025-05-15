@@ -36,9 +36,3 @@ python app.py
 ### Partie C# (Visual Studio)
 Ouvrir `MailSaviorApp.sln` et exécuter l'application.
 
-## 🛠 TODO
-- [ ] Interface utilisateur (WPF)
-- [ ] Intégration API Python
-- [ ] Authentification LDAP
-- [ ] Interface admin avec tableau de bord
-- [ ] Tests unitaires
