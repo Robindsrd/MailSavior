@@ -1,4 +1,5 @@
 using System.Windows;
+using System.DirectoryServices.AccountManagement;
 
 namespace MailSaviorApp
 {
@@ -13,23 +14,33 @@ namespace MailSaviorApp
         {
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
+            string domain = "MAILSAVIOR"; //AD
 
-            
-            if (username == "admin" && password == "admin")
+            try
             {
-                ErrorMessage.Visibility = Visibility.Collapsed;
+                using (var context = new PrincipalContext(ContextType.Domain, "MAILSAVIOR.LOCAL")
+)
+                {
+                    bool isValid = context.ValidateCredentials(username, password);
 
-                UserDashboard dashboard = new UserDashboard();
-                dashboard.Show();
-
-                
-                this.Close();
+                    if (isValid)
+                    {
+                        var dashboard = new UserDashboard();
+                        dashboard.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        ErrorMessage.Text = "Échec de l'authentification LDAP.";
+                        ErrorMessage.Visibility = Visibility.Visible;
+                    }
+                }
             }
-            else
+            catch
             {
+                ErrorMessage.Text = "Erreur lors de la connexion à Active Directory.";
                 ErrorMessage.Visibility = Visibility.Visible;
             }
         }
-
     }
 }

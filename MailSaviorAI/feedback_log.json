@@ -40,5 +40,11 @@
         "text": "bonjour veuillez clicker sur ce lien pour changer votre mot de passe monsieur bastou",
         "score": 0.87,
         "feedback": "phishing"
+    },
+    {
+        "timestamp": "2025-05-19T23:51:07.731425",
+        "text": "Robin DUSSOURD test 19/05",
+        "score": 0.87,
+        "feedback": "safe"
     }
 ]
