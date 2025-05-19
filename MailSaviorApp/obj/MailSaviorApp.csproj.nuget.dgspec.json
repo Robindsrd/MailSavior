@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSaviorNot\\MailSaviorApp\\MailSaviorApp.csproj": {}
+    "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSaviorNot\\MailSaviorApp\\MailSaviorApp.csproj": {
+    "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSaviorNot\\MailSaviorApp\\MailSaviorApp.csproj",
+        "projectUniqueName": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
         "projectName": "MailSaviorApp",
-        "projectPath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSaviorNot\\MailSaviorApp\\MailSaviorApp.csproj",
+        "projectPath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
         "packagesPath": "C:\\Users\\rduss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSaviorNot\\MailSaviorApp\\obj\\",
+        "outputPath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rduss\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0-windows"
+          "net8.0-windows"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0-windows7.0": {
-            "targetAlias": "net7.0-windows",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -32,11 +32,26 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0-windows7.0": {
-          "targetAlias": "net7.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Novell.Directory.Ldap.NETStandard": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "System.DirectoryServices.AccountManagement": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

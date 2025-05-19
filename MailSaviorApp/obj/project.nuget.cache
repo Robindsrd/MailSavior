@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "jD/g4Y9Le9anp816Q2Qqe0HV8gDgIa7vnL21fKVkY2uaa91RwfCNUy5Ubq/a1aWjp0F2URySorrctYtkGEWGEw==",
+  "dgSpecHash": "xvM+BacYmfo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSaviorNot\\MailSaviorApp\\MailSaviorApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rduss\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.5\\microsoft.bcl.cryptography.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\novell.directory.ldap.netstandard\\4.0.0\\novell.directory.ldap.netstandard.4.0.0.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.5\\system.configuration.configurationmanager.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.5\\system.diagnostics.eventlog.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.directoryservices\\9.0.5\\system.directoryservices.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.directoryservices.accountmanagement\\9.0.5\\system.directoryservices.accountmanagement.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.directoryservices.protocols\\9.0.5\\system.directoryservices.protocols.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.formats.asn1\\9.0.5\\system.formats.asn1.9.0.5.nupkg.sha512",
+    "C:\\Users\\rduss\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.5\\system.security.cryptography.protecteddata.9.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MailSaviorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7ed9087c853b9e733cd9e8c827a2ce42ee355a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MailSaviorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MailSaviorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
