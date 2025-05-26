@@ -26,6 +26,9 @@ MailSavior est une application de cybersécurité pour le secteur de la santé, 
 
 ## Lancer le projet (local)
 
+
+### Partie venv
+
 ### Partie Python IA
 ```bash
 cd MailSaviorAI

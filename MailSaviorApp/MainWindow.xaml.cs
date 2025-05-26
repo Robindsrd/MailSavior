@@ -18,7 +18,7 @@ namespace MailSaviorApp
 
             try
             {
-                using (var context = new PrincipalContext(ContextType.Domain, "MAILSAVIOR.LOCAL")
+                using (var context = new PrincipalContext(ContextType.Domain, "MAILSAVIOR.LOCAL") //AD
 )
                 {
                     bool isValid = context.ValidateCredentials(username, password);

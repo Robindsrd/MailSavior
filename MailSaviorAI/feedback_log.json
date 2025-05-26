@@ -46,5 +46,23 @@
         "text": "Robin DUSSOURD test 19/05",
         "score": 0.87,
         "feedback": "safe"
+    },
+    {
+        "timestamp": "2025-05-20T17:57:40.483503",
+        "text": "Ismael pourrais tu m'envoyer les sujets de la dernieres fois ",
+        "score": 0.7,
+        "feedback": "phishing"
+    },
+    {
+        "timestamp": "2025-05-20T17:58:16.660900",
+        "text": "Ismael pourrais tu m'envoyer les sujets de la dernieres fois ",
+        "score": 0.57,
+        "feedback": "safe"
+    },
+    {
+        "timestamp": "2025-05-20T18:17:44.566569",
+        "text": "Bonjour Erwan, voici le lien pour ce connecter au teams",
+        "score": 0.82,
+        "feedback": "safe"
     }
 ]
