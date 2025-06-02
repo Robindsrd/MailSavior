@@ -5,10 +5,13 @@ import random
 import json
 from datetime import datetime
 from typing import List
+from transformers import pipeline
 import os
 
 
 app = FastAPI()
+
+classifier = pipeline("text-classification", model="FacebookAI/roberta-base")
 
 app.add_middleware(
     CORSMiddleware,
@@ -22,8 +25,12 @@ class EmailRequest(BaseModel):
 
 @app.post("/analyze_email")
 async def analyze_email(email: EmailRequest):
-    score = round(random.uniform(0.4, 0.99), 2)
-    return {"suspicion_score": score}
+    result = classifier(email.text)[0]  # Analyse du texte
+
+    label = result["label"]
+    score = result["score"]
+
+    return {"label": label, "suspicion_score": round(score, 2)}
 
 
 
