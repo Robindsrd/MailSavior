@@ -14,33 +14,51 @@ namespace MailSaviorApp
         {
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
-            string domain = "MAILSAVIOR"; //AD
 
-            try
+            bool isDev = true;
+
+            if (isDev)
             {
-                using (var context = new PrincipalContext(ContextType.Domain, "MAILSAVIOR.LOCAL") //AD
-)
+                if (username == "admin" && password == "admin")
                 {
-                    bool isValid = context.ValidateCredentials(username, password);
-
-                    if (isValid)
-                    {
-                        var dashboard = new UserDashboard();
-                        dashboard.Show();
-                        this.Close();
-                    }
-                    else
-                    {
-                        ErrorMessage.Text = "Échec de l'authentification LDAP.";
-                        ErrorMessage.Visibility = Visibility.Visible;
-                    }
+                    var dashboard = new UserDashboard();
+                    dashboard.Show();
+                    this.Close();
+                }
+                else
+                {
+                    ErrorMessage.Text = "Identifiants de test incorrects (admin / admin).";
+                    ErrorMessage.Visibility = Visibility.Visible;
                 }
             }
-            catch
+            else
             {
-                ErrorMessage.Text = "Erreur lors de la connexion à Active Directory.";
-                ErrorMessage.Visibility = Visibility.Visible;
+                try
+                {
+                    using (var context = new PrincipalContext(ContextType.Domain, "MAILSAVIOR.LOCAL"))
+                    {
+                        bool isValid = context.ValidateCredentials(username, password);
+
+                        if (isValid)
+                        {
+                            var dashboard = new UserDashboard();
+                            dashboard.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            ErrorMessage.Text = "Échec de l'authentification LDAP.";
+                            ErrorMessage.Visibility = Visibility.Visible;
+                        }
+                    }
+                }
+                catch
+                {
+                    ErrorMessage.Text = "Erreur lors de la connexion à Active Directory.";
+                    ErrorMessage.Visibility = Visibility.Visible;
+                }
             }
         }
+
     }
 }

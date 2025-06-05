@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "xvM+BacYmfo=",
+  "dgSpecHash": "B82sWXmce4I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
+  "projectFilePath": "D:\\Projects\\MailSavior\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rduss\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.5\\microsoft.bcl.cryptography.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\novell.directory.ldap.netstandard\\4.0.0\\novell.directory.ldap.netstandard.4.0.0.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.5\\system.configuration.configurationmanager.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.5\\system.diagnostics.eventlog.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.directoryservices\\9.0.5\\system.directoryservices.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.directoryservices.accountmanagement\\9.0.5\\system.directoryservices.accountmanagement.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.directoryservices.protocols\\9.0.5\\system.directoryservices.protocols.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.formats.asn1\\9.0.5\\system.formats.asn1.9.0.5.nupkg.sha512",
-    "C:\\Users\\rduss\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.5\\system.security.cryptography.protecteddata.9.0.5.nupkg.sha512"
+    "C:\\Users\\hugoe\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.5\\microsoft.bcl.cryptography.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\novell.directory.ldap.netstandard\\4.0.0\\novell.directory.ldap.netstandard.4.0.0.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.5\\system.configuration.configurationmanager.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.5\\system.diagnostics.eventlog.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.directoryservices\\9.0.5\\system.directoryservices.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.directoryservices.accountmanagement\\9.0.5\\system.directoryservices.accountmanagement.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.directoryservices.protocols\\9.0.5\\system.directoryservices.protocols.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.formats.asn1\\9.0.5\\system.formats.asn1.9.0.5.nupkg.sha512",
+    "C:\\Users\\hugoe\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.5\\system.security.cryptography.protecteddata.9.0.5.nupkg.sha512"
   ],
   "logs": []
 }

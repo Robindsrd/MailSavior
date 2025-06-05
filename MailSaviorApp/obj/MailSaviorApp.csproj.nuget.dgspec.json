@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj": {}
+    "D:\\Projects\\MailSavior\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj": {
+    "D:\\Projects\\MailSavior\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
+        "projectUniqueName": "D:\\Projects\\MailSavior\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
         "projectName": "MailSaviorApp",
-        "projectPath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
-        "packagesPath": "C:\\Users\\rduss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rduss\\OneDrive\\Bureau\\MailSavior\\MailSaviorApp\\obj\\",
+        "projectPath": "D:\\Projects\\MailSavior\\MailSavior\\MailSaviorApp\\MailSaviorApp.csproj",
+        "packagesPath": "C:\\Users\\hugoe\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\MailSavior\\MailSavior\\MailSaviorApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rduss\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\hugoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -71,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
