@@ -20,7 +20,8 @@
                     Margin="0,5,0,10"/>
 
             <Button Content="Analyser"
-                    Width="100"
+                    x:Name="AnalyzeButton"
+                    Width="140"
                     Click="Analyze_Click"
                     Margin="0,0,0,10"/>
             <TextBlock x:Name="ScoreResult"

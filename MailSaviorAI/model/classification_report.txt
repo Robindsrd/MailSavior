@@ -1,0 +1,13 @@
+Modèle MailSavior v1.0.0
+Algorithme : TfidfVectorizer + LogisticRegression
+Dataset : 88 lignes (train=66, test=22)
+
+              precision    recall  f1-score   support
+
+    phishing      1.000     1.000     1.000        11
+        safe      1.000     1.000     1.000        11
+
+    accuracy                          1.000        22
+   macro avg      1.000     1.000     1.000        22
+weighted avg      1.000     1.000     1.000        22
+

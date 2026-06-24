@@ -1,2 +1,33 @@
-MailSaviorAI/venv
+# ---- Python / FastAPI ----
+MailSaviorAI/venv/
+MailSaviorAI/.venv/
+venv/
+.venv/
+__pycache__/
 */__pycache__/*
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.egg-info/
+
+# ---- Données générées à l'exécution (ne JAMAIS committer : données personnelles) ----
+MailSaviorAI/feedback_log.json
+MailSaviorAI/monitoring.csv
+**/feedback_log.json
+**/monitoring.csv
+
+# ---- Secrets ----
+.env
+*.env
+!*.env.example
+
+# ---- .NET / WPF ----
+[Bb]in/
+[Oo]bj/
+*.user
+.vs/
+
+# ---- Divers ----
+*.log

@@ -1,0 +1,5 @@
+0b940a2 2025-05-26 changement apres la visio avec [prenom] venv
+1d9e797 2025-05-19 Connexion AD locale (Hyper-V)
+21b9316 2025-05-19 Connexion AD locale (Hyper-V)
+d7ed908 2025-05-15 changement dans le README
+3ff978a 2025-05-13 first commit WPF et FastAPI

@@ -1,0 +1,89 @@
+text,label
+"Votre compte bancaire a été suspendu, cliquez ici pour vérifier vos informations",phishing
+"Votre compte de messagerie a été suspendu, cliquez ici pour vérifier vos informations",phishing
+"Votre compte client a été suspendu, cliquez ici pour vérifier vos informations",phishing
+"Votre compte professionnel a été suspendu, cliquez ici pour vérifier vos informations",phishing
+"Votre compte interne a été suspendu, cliquez ici pour vérifier vos informations",phishing
+Action requise : confirmez votre mot de passe de messagerie sous 24h ou votre accès sera bloqué,phishing
+Action requise : confirmez votre mot de passe client sous 24h ou votre accès sera bloqué,phishing
+Action requise : confirmez votre mot de passe professionnel sous 24h ou votre accès sera bloqué,phishing
+Action requise : confirmez votre mot de passe interne sous 24h ou votre accès sera bloqué,phishing
+Action requise : confirmez votre mot de passe bancaire sous 24h ou votre accès sera bloqué,phishing
+"Cher client, une activité suspecte a été détectée. Cliquez sur ce lien pour sécuriser votre compte client",phishing
+"Cher client, une activité suspecte a été détectée. Cliquez sur ce lien pour sécuriser votre compte professionnel",phishing
+"Cher client, une activité suspecte a été détectée. Cliquez sur ce lien pour sécuriser votre compte interne",phishing
+"Cher client, une activité suspecte a été détectée. Cliquez sur ce lien pour sécuriser votre compte bancaire",phishing
+"Cher client, une activité suspecte a été détectée. Cliquez sur ce lien pour sécuriser votre compte de messagerie",phishing
+Vous avez gagné un chèque cadeau ! Cliquez immédiatement pour réclamer votre gain,phishing
+Vous avez gagné un iPhone ! Cliquez immédiatement pour réclamer votre gain,phishing
+Vous avez gagné un bon d'achat ! Cliquez immédiatement pour réclamer votre gain,phishing
+Vous avez gagné un voyage ! Cliquez immédiatement pour réclamer votre gain,phishing
+"Votre colis est bloqué, réglez 2,99 EUR de frais de douane via ce lien sécurisé",phishing
+"Votre colis est bloqué, réglez 49 EUR de frais de douane via ce lien sécurisé",phishing
+"Votre colis est bloqué, réglez 199 EUR de frais de douane via ce lien sécurisé",phishing
+"Votre colis est bloqué, réglez 1,50 EUR de frais de douane via ce lien sécurisé",phishing
+"URGENT : votre facture bancaire est impayée, payez maintenant pour éviter la coupure",phishing
+"URGENT : votre facture de messagerie est impayée, payez maintenant pour éviter la coupure",phishing
+"URGENT : votre facture client est impayée, payez maintenant pour éviter la coupure",phishing
+"URGENT : votre facture professionnel est impayée, payez maintenant pour éviter la coupure",phishing
+"URGENT : votre facture interne est impayée, payez maintenant pour éviter la coupure",phishing
+"Votre boîte mail est pleine, validez vos identifiants pour continuer à recevoir vos messages",phishing
+Mise à jour de sécurité requise : reconnectez-vous à client via ce lien,phishing
+Mise à jour de sécurité requise : reconnectez-vous à professionnel via ce lien,phishing
+Mise à jour de sécurité requise : reconnectez-vous à interne via ce lien,phishing
+Mise à jour de sécurité requise : reconnectez-vous à bancaire via ce lien,phishing
+Mise à jour de sécurité requise : reconnectez-vous à de messagerie via ce lien,phishing
+"Bonjour, veuillez cliquer sur ce lien pour réinitialiser votre mot de passe immédiatement",phishing
+Confirmez vos coordonnées bancaires pour recevoir votre remboursement de 49 EUR,phishing
+Confirmez vos coordonnées bancaires pour recevoir votre remboursement de 199 EUR,phishing
+"Confirmez vos coordonnées bancaires pour recevoir votre remboursement de 1,50 EUR",phishing
+"Confirmez vos coordonnées bancaires pour recevoir votre remboursement de 2,99 EUR",phishing
+Dernier avertissement : votre compte sera supprimé si vous ne vérifiez pas vos données ici,phishing
+"Votre carte a été débitée de 1,50 EUR. Si ce n'est pas vous, cliquez ici pour annuler",phishing
+"Votre carte a été débitée de 2,99 EUR. Si ce n'est pas vous, cliquez ici pour annuler",phishing
+"Votre carte a été débitée de 49 EUR. Si ce n'est pas vous, cliquez ici pour annuler",phishing
+"Votre carte a été débitée de 199 EUR. Si ce n'est pas vous, cliquez ici pour annuler",phishing
+"Bonjour, la réunion de demain est confirmée à 10h en salle A12",safe
+"Bonjour, la réunion de demain est confirmée à 14h en salle B3",safe
+"Bonjour, la réunion de demain est confirmée à 9h30 en salle Réunion 2",safe
+"Bonjour, la réunion de demain est confirmée à 16h en salle Open space",safe
+"Salut Alex, peux-tu m'envoyer le compte rendu de la réunion de lundi ?",safe
+"Salut Sam, peux-tu m'envoyer le compte rendu de la réunion de lundi ?",safe
+"Salut Léa, peux-tu m'envoyer le compte rendu de la réunion de lundi ?",safe
+"Salut Noa, peux-tu m'envoyer le compte rendu de la réunion de lundi ?",safe
+"Salut Camille, peux-tu m'envoyer le compte rendu de la réunion de lundi ?",safe
+"Merci pour ton retour, je valide la version du document et je te recontacte",safe
+"Rappel : la formation professionnel aura lieu jeudi à 16h, pense à apporter ton ordinateur",safe
+"Rappel : la formation interne aura lieu jeudi à 10h, pense à apporter ton ordinateur",safe
+"Rappel : la formation bancaire aura lieu jeudi à 14h, pense à apporter ton ordinateur",safe
+"Rappel : la formation de messagerie aura lieu jeudi à 9h30, pense à apporter ton ordinateur",safe
+"Rappel : la formation client aura lieu jeudi à 16h, pense à apporter ton ordinateur",safe
+"Bonjour, voici l'ordre du jour du comité de 10h, n'hésitez pas à ajouter des points",safe
+"Bonjour, voici l'ordre du jour du comité de 14h, n'hésitez pas à ajouter des points",safe
+"Bonjour, voici l'ordre du jour du comité de 9h30, n'hésitez pas à ajouter des points",safe
+"Bonjour, voici l'ordre du jour du comité de 16h, n'hésitez pas à ajouter des points",safe
+"L'équipe support a bien reçu ta demande, nous revenons vers toi rapidement",safe
+"Bonjour Alex, le rapport mensuel est prêt, tu le trouveras sur le partage interne",safe
+"Bonjour Sam, le rapport mensuel est prêt, tu le trouveras sur le partage interne",safe
+"Bonjour Léa, le rapport mensuel est prêt, tu le trouveras sur le partage interne",safe
+"Bonjour Noa, le rapport mensuel est prêt, tu le trouveras sur le partage interne",safe
+"Bonjour Camille, le rapport mensuel est prêt, tu le trouveras sur le partage interne",safe
+Petit point d'organisation : le déjeuner d'équipe est déplacé à 16h,safe
+Petit point d'organisation : le déjeuner d'équipe est déplacé à 10h,safe
+Petit point d'organisation : le déjeuner d'équipe est déplacé à 14h,safe
+Petit point d'organisation : le déjeuner d'équipe est déplacé à 9h30,safe
+"Merci d'avoir participé à l'atelier, les supports seront partagés cette semaine",safe
+"Bonjour, je confirme ma présence à la réunion projet de 14h",safe
+"Bonjour, je confirme ma présence à la réunion projet de 9h30",safe
+"Bonjour, je confirme ma présence à la réunion projet de 16h",safe
+"Bonjour, je confirme ma présence à la réunion projet de 10h",safe
+"Voici les notes de la session bancaire, bonne lecture et bon week-end",safe
+"Voici les notes de la session de messagerie, bonne lecture et bon week-end",safe
+"Voici les notes de la session client, bonne lecture et bon week-end",safe
+"Voici les notes de la session professionnel, bonne lecture et bon week-end",safe
+"Voici les notes de la session interne, bonne lecture et bon week-end",safe
+"Bonjour Alex, peux-tu relire la présentation avant la réunion de 16h ?",safe
+"Bonjour Sam, peux-tu relire la présentation avant la réunion de 10h ?",safe
+"Bonjour Léa, peux-tu relire la présentation avant la réunion de 14h ?",safe
+"Bonjour Noa, peux-tu relire la présentation avant la réunion de 9h30 ?",safe
+"Bonjour Camille, peux-tu relire la présentation avant la réunion de 16h ?",safe

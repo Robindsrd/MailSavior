@@ -6,9 +6,12 @@
         <ListView Name="FeedbackListView" Margin="10">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Texte" Width="250" DisplayMemberBinding="{Binding text}" />
-                    <GridViewColumn Header="Score" Width="80" DisplayMemberBinding="{Binding score}" />
-                    <GridViewColumn Header="Feedback" Width="100" DisplayMemberBinding="{Binding feedback}" />
+                    <GridViewColumn Header="Date" Width="150" DisplayMemberBinding="{Binding created_at}" />
+                    <GridViewColumn Header="Prédiction" Width="90" DisplayMemberBinding="{Binding predicted_label}" />
+                    <GridViewColumn Header="Score" Width="70" DisplayMemberBinding="{Binding suspicion_score}" />
+                    <GridViewColumn Header="Retour" Width="80" DisplayMemberBinding="{Binding feedback_label}" />
+                    <GridViewColumn Header="Correct" Width="70" DisplayMemberBinding="{Binding feedback_correct}" />
+                    <GridViewColumn Header="Taille" Width="60" DisplayMemberBinding="{Binding text_length}" />
                 </GridView>
             </ListView.View>
         </ListView>

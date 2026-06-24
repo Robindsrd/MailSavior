@@ -1,89 +1,101 @@
-using System.Windows;
-using System.Net.Http;
-using System.Text;
-using System.Text.Json;
 using System;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Media;
 
 namespace MailSaviorApp
 {
     public partial class UserDashboard : Window
     {
-        private string lastAnalyzedText = "";
-        private double lastAnalyzedScore = 0;
+        // HttpClient réutilisé (pas de recréation à chaque clic) + timeout configuré.
+        private static readonly HttpClient client = new HttpClient
+        {
+            BaseAddress = new Uri(ApiConfig.BaseUrl),
+            Timeout = ApiConfig.Timeout
+        };
+
+        private string lastPredictedLabel = "";
+        private double lastScore = 0;
+        private int lastTextLength = 0;
 
         public UserDashboard()
         {
             InitializeComponent();
         }
 
-
-        private async void FeedbackYes_Click(object sender, RoutedEventArgs e)
-        {
-            await SendFeedbackAsync(lastAnalyzedText, lastAnalyzedScore, "phishing");
-        }
-
-        private async void FeedbackNo_Click(object sender, RoutedEventArgs e)
-        {
-            await SendFeedbackAsync(lastAnalyzedText, lastAnalyzedScore, "safe");
-        }
-
         private async void Analyze_Click(object sender, RoutedEventArgs e)
         {
             string emailText = EmailInput.Text;
-            string apiUrl = "http://127.0.0.1:8000/analyze_email";
-
-            using (HttpClient client = new HttpClient())
+            if (string.IsNullOrWhiteSpace(emailText))
             {
-                var data = new { text = emailText };
-                var json = JsonSerializer.Serialize(data);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                ShowMessage("Veuillez saisir le texte d'un e-mail.", Brushes.Black);
+                return;
+            }
 
-                try
+            SetLoading(true);
+            FeedbackPanel.Visibility = Visibility.Collapsed;
+            try
+            {
+                var response = await client.PostAsJsonAsync("/analyze_email", new { text = emailText });
+                if (!response.IsSuccessStatusCode)
                 {
-                    HttpResponseMessage response = await client.PostAsync(apiUrl, content);
-                    response.EnsureSuccessStatusCode();
-
-                    string result = await response.Content.ReadAsStringAsync();
-                    using JsonDocument doc = JsonDocument.Parse(result);
-                    double score = doc.RootElement.GetProperty("suspicion_score").GetDouble();
-
-                    // Stocker pour le feedback
-                    lastAnalyzedText = emailText;
-                    lastAnalyzedScore = score;
-
-                    ScoreResult.Text = $"Score de suspicion : {score * 100:0.0}%";
-                    FeedbackPanel.Visibility = Visibility.Visible;
+                    ShowMessage("Le service d'analyse est momentanément indisponible.", Brushes.Black);
+                    return;
                 }
-                catch (Exception ex)
-                {
-                    ScoreResult.Text = $"Erreur lors de l'analyse : {ex.Message}";
-                }
+
+                var result = await response.Content.ReadFromJsonAsync<AnalyzeResult>();
+                lastPredictedLabel = result.label;
+                lastScore = result.suspicion_score;
+                lastTextLength = emailText.Length;
+
+                // Accessibilité : le verdict est explicite en texte, pas seulement via la couleur.
+                string verdict = result.label == "phishing" ? "⚠ PHISHING détecté" : "✓ Message sûr";
+                ShowMessage(
+                    $"{verdict}   |   Score de suspicion : {result.suspicion_score * 100:0.0}%   |   Modèle v{result.model_version}",
+                    result.label == "phishing" ? Brushes.DarkRed : Brushes.DarkGreen);
+                FeedbackPanel.Visibility = Visibility.Visible;
+            }
+            catch (TaskCanceledException)
+            {
+                ShowMessage("Délai dépassé : le service d'analyse ne répond pas.", Brushes.Black);
+            }
+            catch (HttpRequestException)
+            {
+                ShowMessage("Connexion impossible au service d'analyse.", Brushes.Black);
+            }
+            finally
+            {
+                SetLoading(false);
             }
         }
 
+        private async void FeedbackYes_Click(object sender, RoutedEventArgs e)
+            => await SendFeedbackAsync("phishing");
 
+        private async void FeedbackNo_Click(object sender, RoutedEventArgs e)
+            => await SendFeedbackAsync("safe");
 
-        public async Task SendFeedbackAsync(string emailText, double score, string feedback)
+        private async Task SendFeedbackAsync(string feedback)
         {
-            var client = new HttpClient();
-            var feedbackData = new AnalysisFeedback
+            try
             {
-                text = emailText,
-                score = score,
-                feedback = feedback
-            };
-
-            var response = await client.PostAsJsonAsync("http://localhost:8000/feedback", feedbackData);
-            if (response.IsSuccessStatusCode)
-            {
-                MessageBox.Show("Feedback envoye avec succes !");
+                var payload = new AnalysisFeedback
+                {
+                    suspicion_score = lastScore,
+                    feedback = feedback,
+                    predicted_label = lastPredictedLabel,
+                    text_length = lastTextLength
+                };
+                var response = await client.PostAsJsonAsync("/feedback", payload);
+                MessageBox.Show(response.IsSuccessStatusCode
+                    ? "Feedback envoyé avec succès !"
+                    : "Erreur lors de l'envoi du feedback.");
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Erreur lors de l’envoi du feedback.");
+                MessageBox.Show("Connexion impossible : feedback non envoyé.");
             }
         }
 
@@ -93,5 +105,23 @@ namespace MailSaviorApp
             fw.Show();
         }
 
+        private void ShowMessage(string text, Brush color)
+        {
+            ScoreResult.Text = text;
+            ScoreResult.Foreground = color;
+        }
+
+        private void SetLoading(bool loading)
+        {
+            AnalyzeButton.IsEnabled = !loading;
+            AnalyzeButton.Content = loading ? "Analyse en cours..." : "Analyser";
+        }
+
+        private class AnalyzeResult
+        {
+            public string label { get; set; }
+            public double suspicion_score { get; set; }
+            public string model_version { get; set; }
+        }
     }
 }
