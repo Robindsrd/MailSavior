@@ -1,4 +1,0 @@
-created_at,request_id,model_version,predicted_label,suspicion_score,latency_ms,http_status,text_length,feedback_correct
-2026-06-24T18:42:37+00:00,req-8ce08f9a,1.0.0,phishing,0.7768,2.9,200,71,
-2026-06-24T18:42:37+00:00,req-f19293ae,1.0.0,safe,0.3444,1.7,200,62,
-2026-06-24T18:43:02+00:00,req-7f2c860b,1.0.0,phishing,0.7303,1.9,200,39,

@@ -1,7 +1,0 @@
-# E-mails SYNTHETIQUES pour la démonstration (aucune donnée réelle)
-
-[PHISHING]
-Votre compte a été suspendu, cliquez ici pour vérifier vos informations sous 24h.
-
-[SAFE]
-Bonjour, la réunion de demain est confirmée à 10h en salle A12. Bonne journée.
