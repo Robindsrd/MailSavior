@@ -31,3 +31,7 @@ MailSaviorAI/monitoring.csv
 
 # ---- Divers ----
 *.log
+
+# ---- Donnees brutes / intermediaires (PII, ne pas committer) ----
+MailSaviorAI/emails_dataset_raw.csv
+MailSaviorAI/emails_dataset1.csv

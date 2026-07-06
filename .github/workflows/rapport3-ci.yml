@@ -22,10 +22,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
 
-      - name: Build dataset & train model
-        run: |
-          python make_dataset.py
-          python train_model.py
+      - name: Train model (sur le dataset reel versionne)
+        run: python train_model.py
 
       - name: Run tests with coverage
         run: pytest --cov=app --cov-report=term-missing -q
